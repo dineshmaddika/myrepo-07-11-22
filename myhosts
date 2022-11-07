@@ -7,3 +7,9 @@
 [myappserver]
 172.31.8.88
 172.31.88.13
+
+
+
+[mywebservers:vars]
+mywebpackonubuntu= apache2
+mywebpackonRedHat= httpd
