@@ -18,7 +18,9 @@
     template: 
         src: myindex.j2
         dest: /var/www/html/index.html    
-    notify: restart webserver    
+    notify: 
+    - restart webserver
+    - install tree     
 
   -  name: download remote
      get_url:
@@ -32,3 +34,8 @@
     service: 
         name: apache2
         state: restarted    
+
+  - name: install tree
+    apt:
+      name: tree
+      state: present      
