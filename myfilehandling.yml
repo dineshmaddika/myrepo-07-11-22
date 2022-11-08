@@ -4,3 +4,8 @@
   tasks: 
   -  include_tasks: myfile.yml
 
+  - name: copy file from master to node
+    copy:
+     src: my2ndfile.txt
+     dest: /home/ubuntu/my2ndfile.txt
+
