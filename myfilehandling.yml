@@ -19,8 +19,8 @@
         src: myindex.j2
         dest: /var/www/html/index.html    
 
-  - name: download remote
-    get_url:
-        url: https://mybucket-12-08.s3.amazonaws.com/538-2021-637720625240871340.pdf
-        dest: /home/ubuntu/538-2021-637720625240871340.pdf
-    force_basic_auth: yes    
+  -  name: download remote
+     get_url:
+      url: https://mybucket-12-08.s3.amazonaws.com/538-2021-637720625240871340.pdf
+      dest: /home/ubuntu/538-2021-637720625240871340.pdf
+      force_basic_auth: yes    
